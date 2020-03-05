@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a0e71f0-01d3-41d3-a22b-48d808a0a2ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Header/LatestProducts/Card/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Header/LatestProducts/Card/Stars/Stars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Header/LatestProducts/LatestProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/card/card.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nav/Hamburger/Hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nav/Hamburger/Hamburger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nav/Hamburger/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nav/Hamburger/Menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/menu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/card" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,14 +47,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\modernpage\src\Nav\Hamburger" />
+      <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img\slideshow" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img\card" />
       <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img\menu" />
       <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img\drone" />
       <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img" />
-      <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img\slideshow" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Łukasz\Desktop\modernpage\src\Nav\Hamburger" />
       <recent name="C:\Users\Łukasz\Desktop\modernpage\src\img\slideshow" />
     </key>
   </component>
@@ -70,7 +76,8 @@
       <workItem from="1583329304400" duration="9737000" />
       <workItem from="1583343153636" duration="3250000" />
       <workItem from="1583411459821" duration="3726000" />
-      <workItem from="1583417854583" duration="744000" />
+      <workItem from="1583417854583" duration="1859000" />
+      <workItem from="1583425200685" duration="6224000" />
     </task>
     <servers />
   </component>
@@ -81,10 +88,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="246" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583331397081">
+    <state x="246" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583425522069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="246" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583331397081" />
+    <state x="246" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583425522069" />
     <state x="218" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583138113657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -97,9 +104,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583138636914" />
-    <state x="358" y="244" key="run.anything.popup" timestamp="1583344613262">
+    <state x="358" y="244" key="run.anything.popup" timestamp="1583430286836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="358" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583344613262" />
+    <state x="358" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583430286836" />
   </component>
 </project>

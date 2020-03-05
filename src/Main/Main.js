@@ -3,9 +3,7 @@ import Slideshow from "./Slideshow/Slideshow";
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   display: flex;

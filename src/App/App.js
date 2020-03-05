@@ -13,15 +13,15 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 const Container = styled.div`
-  background: linear-gradient(blueviolet , blue);
+
 `;
 const App = () => {
   return(
       <Container>
         <GlobalStyle/>
         <Nav/>
-        <Header/>
         <Main/>
+        <Header/>
         <Footer/>
       </Container>
   )

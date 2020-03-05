@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import LatestProducts from "./LatestProducts/LatestProducts";
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
 
 const Header = () => {
     return(
-        <div>
-
-        </div>
+        <Container>
+            <LatestProducts/>
+        </Container>
     )
 };
 export default Header
