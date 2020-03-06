@@ -4,6 +4,7 @@ import Nav from "../Nav/Nav";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
+import Subscribe from "../Subscribe/Subscribe";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -22,6 +23,7 @@ const App = () => {
         <Nav/>
         <Main/>
         <Header/>
+        <Subscribe/>
         <Footer/>
       </Container>
   )
