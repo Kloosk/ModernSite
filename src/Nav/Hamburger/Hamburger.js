@@ -18,7 +18,7 @@ const Line = styled.div`
   width: 33px;
   height: 4px;
   transform: translateY(-50%);
-  background-color: #fff;
+  background-color: ${props => props.scroll ? "#000" : "#fff"};
   border-radius: 3px;
   &::after{
   content: '';
@@ -114,7 +114,7 @@ const LangShow = styled.ul`
      display: block;
   }
 `;
-const Hamburger = () => {
+const Hamburger = props => {
     const [open,setOpen] = useState(false);
     const openMenu = () => {
       setOpen(!open);
@@ -122,7 +122,7 @@ const Hamburger = () => {
     return(
         <Container>
             <HamMenu onClick={openMenu}>
-                <Line></Line>
+                <Line scroll={props.scroll}></Line>
             </HamMenu>
             <Containe open={open}>
                 <Exit onClick={openMenu}>&times;</Exit>

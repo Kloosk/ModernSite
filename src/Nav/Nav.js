@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger/Hamburger";
 import List from "./Hamburger/List/List";
@@ -16,12 +16,26 @@ const Container = styled.nav`
   justify-content: space-between;
   padding: 3vh 4vw;
   z-index: 2;
+  color: ${props => props.scroll ? "#000" : "#fff"};
+  background-color: ${props => props.scroll && "#fff"};
 `;
 
 const Nav = () => {
+    useEffect(() => {
+      window.addEventListener("scroll",() => {
+          console.log(window.pageYOffset);
+          if(window.pageYOffset > 0){
+              setScroll(true);
+          }
+         else{
+             setScroll(false);
+          }
+      });
+    });
+    const [scroll,setScroll] = useState(false);
     return(
-        <Container>
-            <Hamburger/>
+        <Container scroll={scroll}>
+            <Hamburger scroll={scroll}/>
             <Logo/>
             <Icons/>
         </Container>

@@ -14,7 +14,7 @@ const IconCart = styled.div`
 const Cart = styled.svg`
   width: 20px;
   height: 20px;
-  color: #fff;
+  color: inherit;
   font-size: 2rem;
   cursor: pointer;
   margin: 0 10px;
@@ -50,7 +50,7 @@ const IconSeek = styled.div`
 const Seek = styled.svg`
   width: 20px;
   height: 20px;
-  color: #fff;
+  color: inherit;
   font-size: 2rem;
   cursor: pointer;
   margin: 0 10px;

@@ -26,14 +26,23 @@ const H1 = styled.h1`
   min-width: 45%;
   text-align: center;
 `;
-
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+`;
 const LatestProducts = () => {
     return(
         <Container>
             <Title>
                 <Hr/><H1>Latest Products</H1><Hr/>
             </Title>
-            <Card/>
+            <Grid>
+                <Card/>
+                <Card/>
+                <Card/>
+            </Grid>
         </Container>
     )
 };

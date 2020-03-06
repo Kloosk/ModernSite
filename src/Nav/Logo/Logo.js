@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
 `;
 const H1 = styled.h1`
-  color: #fff;
+  color: inherit;
   font-size: 2rem;
   cursor: pointer;
 `;

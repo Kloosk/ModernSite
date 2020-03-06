@@ -20,13 +20,14 @@ const Out = styled.div`
    }
 `;
 const Front = styled.div`
- width: 80vw;
-    height: 60vh;
+  width: 100%;
+  height: 60vh;
   background-image: url(${img1});
   background-position: center;
   background-size: cover;
   overflow: hidden;
   position:absolute;
+  cursor: pointer;
   box-shadow: 6px 7px 5px 0 rgba(51,51,51,1);
   &::after{
     content: 'SALE';
@@ -70,9 +71,9 @@ const Back = styled.div`
   background-image: url(${img1});
   background-position: center;
   background-size: cover;
-  width: 80vw;
+  width: 100%;
   height: 60vh;
-  
+  cursor: pointer;
 `;
 const H1 = styled.h1`
   font-size: 1.8rem;
@@ -106,6 +107,10 @@ const Btn = styled.button`
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  user-select: none;
+  &:hover{
+    bottom: 2px;
+  }
  
 `;
 const Cart = styled.svg`
