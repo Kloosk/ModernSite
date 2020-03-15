@@ -5,16 +5,20 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import Subscribe from "../Subscribe/Subscribe";
+import Reviews from "../Reviews/Reviews";
+import FollowUs from "../FollowUs/FollowUs";
 
 const GlobalStyle = createGlobalStyle`
   * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+      scroll-behavior: smooth;
     }
 `;
 const Container = styled.div`
-
+    overflow-x: hidden;
 `;
 const App = () => {
   return(
@@ -24,6 +28,8 @@ const App = () => {
         <Main/>
         <Header/>
         <Subscribe/>
+        <Reviews/>
+        <FollowUs/>
         <Footer/>
       </Container>
   )

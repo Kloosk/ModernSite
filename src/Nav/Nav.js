@@ -4,6 +4,7 @@ import Hamburger from "./Hamburger/Hamburger";
 import List from "./Hamburger/List/List";
 import Icons from "./Icons/Icons";
 import Logo from "./Logo/Logo";
+import ScrollUp from "../ScrollUp/ScrollUp";
 
 const Container = styled.nav`
   width: 100vw;
@@ -38,6 +39,7 @@ const Nav = () => {
             <Hamburger scroll={scroll}/>
             <Logo/>
             <Icons/>
+            <ScrollUp scroll={scroll}/>
         </Container>
     )
 };

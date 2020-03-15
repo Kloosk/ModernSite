@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transform: rotate(5deg) translateX(-5vw);
+  transform: rotate(2deg) translateX(-2vw);
 `;
 const Input = styled.input`
   border-radius: 27px;
@@ -18,7 +18,7 @@ const Input = styled.input`
   height: 54px;
   outline: none;
   color: #fff;
-  padding: 0 5px;
+  padding: 0 10px;
   margin-right: 50px;
   border: 2px solid blueviolet;
   transition: all 1s ease-in-out;
