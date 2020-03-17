@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer";
 import Subscribe from "../Subscribe/Subscribe";
 import Reviews from "../Reviews/Reviews";
 import FollowUs from "../FollowUs/FollowUs";
+import WeekOffer from "../WeekOffer/WeekOffer";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -28,6 +29,7 @@ const App = () => {
         <Main/>
         <Header/>
         <Subscribe/>
+        <WeekOffer/>
         <Reviews/>
         <FollowUs/>
         <Footer/>
