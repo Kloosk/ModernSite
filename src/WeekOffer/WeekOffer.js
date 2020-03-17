@@ -83,17 +83,13 @@ const Hot = styled.h1`
 `;
 const Btn = styled.button`
   font-size: 2rem;
-  background: #fff;
   padding: 7px 14px;
   color: #000;
   cursor: pointer;
   border: 1px solid #000;
   position: relative;
   border-radius: 14px;
-  transition: font-weight 0.3s ease-in;
-  &:hover{
-    font-weight: bold;
-  }
+  transition: font-weight 0.3s ease-in;}
   &::after{
     content: '';
     height: 0;
@@ -104,7 +100,7 @@ const Btn = styled.button`
     left: 0;
     transition: height 0.3s ease-in;
     border-radius: 14px;
-    opacity: 0.5;
+    opacity: 0.2;
   }
   &:hover::after{
     height: 100%;

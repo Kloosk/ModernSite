@@ -8,6 +8,7 @@ import Subscribe from "../Subscribe/Subscribe";
 import Reviews from "../Reviews/Reviews";
 import FollowUs from "../FollowUs/FollowUs";
 import WeekOffer from "../WeekOffer/WeekOffer";
+import ReadMore from "../ReadMore/ReadMore";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -30,6 +31,7 @@ const App = () => {
         <Header/>
         <Subscribe/>
         <WeekOffer/>
+        <ReadMore/>
         <Reviews/>
         <FollowUs/>
         <Footer/>
