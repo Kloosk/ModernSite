@@ -74,9 +74,30 @@ const A = styled.a`
   padding: 0 20px;
   color: dodgerblue;
 `;
+const Hr = styled.hr`
+  height: 4px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: blueviolet;
+`;
+const Hone = styled.h1`
+  font-size: 2rem;
+  color: #000;
+  min-width: 30%;
+  text-align: center;
+`;
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+`;
 const ReadMore = () => {
     return(
         <Container>
+            <Flex>
+                <Hr/><Hone>Read More</Hone><Hr/>
+            </Flex>
             <Img>
                 <ImgOne></ImgOne>
                 <ImgTwo></ImgTwo>

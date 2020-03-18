@@ -16,7 +16,7 @@ const Container = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 3vh 4vw;
-  z-index: 2;
+  z-index: 10;
   color: ${props => props.scroll ? "#000" : "#fff"};
   background-color: ${props => props.scroll && "#fff"};
 `;
