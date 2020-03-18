@@ -12,21 +12,6 @@ const Img = styled.div`
   height: 50%;
   width: 100%;
 `;
-const ImgOne = styled.div`
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  width: 80%;
-  height: 50vh;
-  background: url(${img2}) no-repeat center/cover;
-  transform: translateX(-50%);
-  transition: all 0.5s ease-in;
-  z-index: 2;
-  &:hover{
-     transform: translate(-44%,-20px);
-      z-index: 1;
-  }
-`;
 const ImgTwo = styled.div`
   position: absolute;
   top: 0;
@@ -37,10 +22,26 @@ const ImgTwo = styled.div`
   background: url(${img1})  no-repeat center/cover;
   z-index: 1;
   transition: all 0.5s ease-in;
-  ${ImgOne}:hover &{
+   ${Img}:hover & {
     transform: translate(-56%,20px);
-    z-index: 2;
+    z-index: 2; 
   }
+`;
+const ImgOne = styled.div`
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 80%;
+  height: 50vh;
+  background: url(${img2}) no-repeat center/cover;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  ${Img}:hover &{
+     transform: translate(-44%,-20px);
+      z-index: 1;
+  }
+  
 `;
 const Text = styled.div`
   width: 95%;

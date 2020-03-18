@@ -9,6 +9,7 @@ import Reviews from "../Reviews/Reviews";
 import FollowUs from "../FollowUs/FollowUs";
 import WeekOffer from "../WeekOffer/WeekOffer";
 import ReadMore from "../ReadMore/ReadMore";
+import PopularItems from "../PopularItems/PopularItems";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -31,6 +32,7 @@ const App = () => {
         <Header/>
         <Subscribe/>
         <WeekOffer/>
+        <PopularItems/>
         <ReadMore/>
         <Reviews/>
         <FollowUs/>
