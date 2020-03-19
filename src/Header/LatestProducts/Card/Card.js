@@ -128,7 +128,7 @@ const Card = () => {
                 <Front>
                     <Txt>
                         <H1>Car Audio</H1>
-                        <Stars/>
+                        <Stars colorr={true}/>
                         <Flex>
                             <PriceOld>$26.00</PriceOld>
                             <PriceNew>$24.00</PriceNew>
