@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 
 
@@ -21,9 +21,9 @@ const Cart = styled.svg`
 `;
 const CartMenu = styled.div`
     position: absolute;
-    top: 110%;
-    right: 10px;
-    width: 80vw;
+    top: 155%;
+    right: -40px;
+    width: 90vw;
     background-color: #fff;
     display: none;
     ${IconCart}:hover & {
@@ -32,7 +32,7 @@ const CartMenu = styled.div`
 `;
 const Head = styled.div`
   color: #000;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid blueviolet;
   width: 100%;
   padding: 15px 20px;
   font-size: 1.2rem;
@@ -58,16 +58,16 @@ const Seek = styled.svg`
 const Search = styled.svg`
   width: 20px;
   height: 20px;
-  color: #000;
+  color: blueviolet;
   font-size: 2rem;
   cursor: pointer;
-  margin: 0 10px;
+  margin-left: 15px;
 `;
 const SeekMenu = styled.div`
     position: absolute;
-    top: 110%;
-    right: 20px;
-    width: 80vw;
+    top: 150%;
+    right: 0;
+    width: 90vw;
     background-color: #fff;
     display: none;
     ${IconSeek}:hover & {
@@ -80,7 +80,7 @@ const SeekBody = styled.div`
   width: 100%;
 `;
 const Input = styled.input`
-  width: 90%;
+  width: 85%;
   padding: 20px 15px;
   font-size: 1.2rem;
 `;

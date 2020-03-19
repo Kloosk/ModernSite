@@ -4,7 +4,6 @@ import img1 from '../../../img/card/card.jpg'
 import Stars from "./Stars/Stars";
 const Container = styled.div`
    width: 100vw;
-   height: 60vh;
    margin-top: 50px;
    display: flex;
    align-items: center;
@@ -46,12 +45,12 @@ const Txt = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 21%;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 20px 0;
   &::before{
     content: 'Electronics';
     position: absolute;
@@ -76,8 +75,8 @@ const Back = styled.div`
   cursor: pointer;
 `;
 const H1 = styled.h1`
-  font-size: 1.8rem;
-  padding: 5px;
+  font-size: 1.5rem;
+  
 `;
 const Flex = styled.div`
   display: flex;

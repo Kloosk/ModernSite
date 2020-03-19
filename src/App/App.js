@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Container = styled.div`
     overflow-x: hidden;
+    background-color: #fff;
 `;
 const App = () => {
   return(

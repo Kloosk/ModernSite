@@ -3,12 +3,11 @@ import styled from "styled-components";
 import img1 from '../img/mobile/laptop.jpg';
 
 const Container = styled.div`
-    height: 130vh;
+   height: 180vh;
     width: 100vw;
     background-color: #fff;
     font-size: 2rem;
     position: relative;
-    margin-top: 50px;
 `;
 const BgH1 = styled.h1`
   position: absolute;
@@ -41,7 +40,7 @@ const Item = styled.div`
   width: 100%;
   height: 50vh;
   position: absolute;
-  top: 20%;
+  top: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,11 +65,11 @@ const Block = styled.div`
 `;
 const Text = styled.p`
   text-align: center;
-  padding: 0 5vw;
+  padding: 0 3vw;
   position: absolute;
-  top: 62%;
+  top: 55%;
   color: gray;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
 `;
 const Hot = styled.h1`

@@ -21,7 +21,7 @@ const Exit = styled.div`
   position: absolute;
   top: 2px;
   right: 15px;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #000;
   cursor: pointer;
@@ -34,7 +34,6 @@ list-style: none;
 const Li = styled.li`
 z-index: 4;
 opacity: 0.8;
-padding: 13px 13px;
 text-transform: uppercase;
 font-weight: bold;
 font-size: 1.2rem;
@@ -52,7 +51,6 @@ const Hr = styled.hr`
 `;
 const Title = styled.li`
   cursor: auto;
-  padding: 20px 15px;
   opacity: 1;
   background-color: #fff;
   font-weight: bold;
@@ -71,6 +69,7 @@ const LangShow = styled.ul`
   margin-top: 10px;
   display: none;
   transform: translateY();
+  list-style: none;
  ${Lang}:hover & {
      display: block;
   }
@@ -110,7 +109,6 @@ const Menu = props => {
                             <Li>EN</Li>
                         </LangShow>
                     </Lang>
-
                 </Ul>
             </Ul>
         </Container>

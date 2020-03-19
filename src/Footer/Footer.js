@@ -10,8 +10,9 @@ const Container = styled.footer`
 `;
 const Ul = styled.ul`
   list-style: none;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
   align-items: center;
 `;
 const Li = styled.li`
@@ -21,6 +22,10 @@ const Li = styled.li`
   &:hover{
    border-bottom: 1px solid #000;
   }
+  &:nth-child(5){
+    grid-column: 1/3;
+  }
+  
 `;
 const Copy = styled.div`
   margin: 40px 0;

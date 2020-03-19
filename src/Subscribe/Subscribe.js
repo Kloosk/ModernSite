@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 105vw;
+  width: 100vw;
   margin-top: 50px;
+  padding: 15px 0;
   background: linear-gradient(to right,blue , blueviolet);
-  padding: 50px 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  transform: rotate(2deg) translateX(-2vw);
+  justify-content: center;
+  flex-direction: column;
 `;
 const Input = styled.input`
   border-radius: 27px;
@@ -19,7 +19,7 @@ const Input = styled.input`
   outline: none;
   color: #fff;
   padding: 0 10px;
-  margin-right: 50px;
+  margin-bottom: 20px;
   border: 2px solid blueviolet;
   transition: all 1s ease-in-out;
   background: linear-gradient(to right,blue , blueviolet);

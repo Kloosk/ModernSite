@@ -24,9 +24,7 @@ const Grid = styled.div`
 `;
 const Item = styled.div`
    width: 100%;
-   height: 100%;
    position: relative;
-   margin-bottom: 50px;
    &:last-child{
    margin: 0;
    }
@@ -66,13 +64,14 @@ const Left = styled.div`
   width: 20%;
 `;
 const Outside = styled.div`
+margin: 10px 0;
+  height: 260px;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #f8f8f8;
   display: flex;
   width: 90%;
-  height: 30vh;
   padding: 3vh 5vw;
   cursor: pointer;
   z-index: 2;
@@ -82,8 +81,9 @@ const Outside = styled.div`
   }
 `;
 const Inside = styled.div`
+  margin: 10px 0;
+  height: 260px;
   width: 90%;
-  height: 30vh;
   position: relative;
   top: 0;
   left: 0;
@@ -99,8 +99,8 @@ const Btn = styled.button`
   background-color: dodgerblue;
   border: none;
   position: absolute;
-  top: 40px;
-  right: 50px;
+  top: 18px;
+  right: 30px;
   width: 80px;
   height: 60px;
   z-index: 1;
@@ -150,22 +150,22 @@ const Section = styled.section`
   width: 100%;
 `;
 const Desc = styled.p`
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+  font-size: 1rem;
   color: #fff;
   width: 100%;
 `;
 const PIn = styled.p`
-  width: 20%;
   font-size: 1rem;
   color: #fff;
   background-color: dodgerblue;
   padding: 3px 7px;
+  width: 30%;
   text-align: center;
 `;
 const TitleIn = styled.h1`
   color: #fff;
   font-size: 1.5rem;
+  letter-spacing: 2px;
   margin: 10px 0 100px 0;
 `;
 const Search = styled.div`
@@ -202,9 +202,9 @@ const Hr = styled.hr`
   background-color: blueviolet;
 `;
 const H1 = styled.h1`
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #000;
-  min-width: 55%;
+  min-width: 65%;
   text-align: center;
 `;
 const Flex = styled.div`

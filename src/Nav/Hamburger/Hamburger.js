@@ -58,9 +58,9 @@ const Containe = styled.div`
 const Exit = styled.div`
   z-index: 3;
   position: absolute;
-  top: 2px;
+  top: 0;
   right: 15px;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #000;
   cursor: pointer;
@@ -73,7 +73,7 @@ list-style: none;
 const Li = styled.li`
 z-index: 4;
 opacity: 0.8;
-padding: 13px 13px;
+padding: 7px 15px;
 text-transform: uppercase;
 font-weight: bold;
 font-size: 1.2rem;
@@ -91,14 +91,14 @@ const Hr = styled.hr`
 `;
 const Title = styled.li`
   cursor: auto;
-  padding: 20px 15px;
+  padding: 10px 15px;
   opacity: 1;
   background-color: #fff;
   font-weight: bold;
 `;
 const Lang = styled.li`
   cursor: auto;
-  padding: 20px 15px;
+  padding: 10px 15px;
   opacity: 1;
   background-color: #fff;
   z-index: 5;
@@ -110,14 +110,45 @@ const LangShow = styled.ul`
   margin-top: 10px;
   display: none;
   transform: translateY();
+  list-style: none;
  ${Lang}:hover & {
      display: block;
   }
+`;
+const Range = styled.input`
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  &::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: blueviolet;
+  cursor: pointer;
+  }
+  &::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
 `;
 const Hamburger = props => {
     const [open,setOpen] = useState(false);
     const openMenu = () => {
       setOpen(!open);
+    };
+    const bright = e => {
+      window.document.body.style.filter = "brightness(" + e.target.value + "%)";
     };
     return(
         <Container>
@@ -147,13 +178,15 @@ const Hamburger = props => {
                     <Title>SETTINGS</Title>
                     <Hr/>
                     <Ul>
+                        <Li>
+                            <Range onChange={bright} type="range" min="10" max="100"/>
+                        </Li>
                         <Lang>LANGUAGE
                             <LangShow>
                                 <Li>PL</Li>
                                 <Li>EN</Li>
                             </LangShow>
                         </Lang>
-
                     </Ul>
                 </Ul>
             </Containe>

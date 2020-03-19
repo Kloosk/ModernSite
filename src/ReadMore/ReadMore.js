@@ -5,7 +5,7 @@ import img2 from '../img/mobile/laptop.jpg';
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
 `;
 const Img = styled.div`
   position: relative;
@@ -46,7 +46,6 @@ const ImgOne = styled.div`
 const Text = styled.div`
   width: 95%;
   padding: 0 5vw 2vh 5vw;
-  margin: 10vh 2vw;
   border-right: 10px solid gray;
   border-bottom: 10px solid gray;
 `;
@@ -82,9 +81,9 @@ const Hr = styled.hr`
   background-color: blueviolet;
 `;
 const Hone = styled.h1`
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #000;
-  min-width: 30%;
+  min-width: 50%;
   text-align: center;
 `;
 const Flex = styled.div`

@@ -9,11 +9,11 @@ const Container = styled.div`
   font-weight: normal;
 `;
 const TitleSmall = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 `;
 const Title = styled.p`
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 `;
 const TitleBig = styled.p`
   margin: 10px 0;
@@ -21,10 +21,10 @@ const TitleBig = styled.p`
   font-size: 2rem;
 `;
 const P = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 const Flex=  styled.div`
-  margin-top: 35px;
+  margin: 35px 0;
   display: flex;
   align-items: center;
 `;
@@ -33,7 +33,7 @@ const Btn = styled.button`
   color: dodgerblue;
   padding: 8px 18px;
   border-radius: 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -42,7 +42,7 @@ const Btn = styled.button`
   }
 `;
 const Price = styled.p`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-left: 20px;
 `;
 const Txt = () => {

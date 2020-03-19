@@ -5,8 +5,6 @@ import img2 from "../img/review/women.jpg"
 import Stars from "../Header/LatestProducts/Card/Stars/Stars";
 
 const Container = styled.div`
-  margin-top: 10px;
-  height: 100vh;
   width: 100vw;
   color: #fff;
   background-image: url(${img1});
@@ -34,17 +32,17 @@ const Client = styled.div`
   padding: 40px;
 `;
 const H1 = styled.h1`
-  background-color: ${props => props.color ? "dodgerblue" : "#fff"};
-  color: ${props => props.color ? "#fff" : "dodgerblue"};
+  background-color: ${props => props.colorr ? "dodgerblue" : "#fff"};
+  color: ${props => props.colorr ? "#fff" : "dodgerblue"};
   border-radius: 20px;
   text-align: center;
   padding: 5px 12px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   width: 120px;
 `;
 const P = styled.p`
-  font-size: 1.8rem;
-  color: ${props => props.color ? "#000" : "#fff"};
+  font-size: 1.2rem;
+  color: ${props => props.colorr ? "#000" : "#fff"};
   text-transform: uppercase;
   font-weight: lighter;
   margin: 20px 0;
@@ -55,7 +53,7 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 100%;
 `;
 const Photo = styled.div`
   border-radius: 50%;
@@ -74,7 +72,7 @@ const Title = styled.h1`
 `;
 const Name = styled.div`
   margin-top: 3px;
-  color: ${props => props.color ? "#000" : "#fff"};
+  color: ${props => props.colorr ? "#000" : "#fff"};
   font-size: 1.5rem;
 `;
 const Work = styled.div`
@@ -94,25 +92,25 @@ const Reviews = () => {
         <Container>
             <Title>OUR REVIEWS</Title>
                 <Client>
-                    <H1 color={true}>Clients</H1>
-                    <P color={true}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat?</P>
+                    <H1 colorr={true}>Clients</H1>
+                    <P colorr={true}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat?</P>
                     <Flex>
                         <Photo></Photo>
                         <div>
-                            <Stars color={true}/>
-                            <Name color={true}>Jon Jonson</Name>
+                            <Stars colorr={true}/>
+                            <Name colorr={true}>Jon Jonson</Name>
                             <Work>SEO Digity</Work>
                         </div>
                     </Flex>
                 </Client>
             <Partners>
-                <H1 color={false}>Partners</H1>
-                <P color={false}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat?</P>
+                <H1 colorr={false}>Partners</H1>
+                <P colorr={false}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat?</P>
                 <Flex>
                     <Photo></Photo>
                     <div>
-                        <Stars color={false}/>
-                        <Name color={false}>Jon Jonson</Name>
+                        <Stars colorr={false}/>
+                        <Name colorr={false}>Jon Jonson</Name>
                         <Work>SEO Digity</Work>
                     </div>
                 </Flex>

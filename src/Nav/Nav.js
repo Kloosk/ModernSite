@@ -1,7 +1,6 @@
 import React, {useEffect,useState} from "react";
 import styled from "styled-components";
 import Hamburger from "./Hamburger/Hamburger";
-import List from "./Hamburger/List/List";
 import Icons from "./Icons/Icons";
 import Logo from "./Logo/Logo";
 import ScrollUp from "../ScrollUp/ScrollUp";
@@ -24,7 +23,6 @@ const Container = styled.nav`
 const Nav = () => {
     useEffect(() => {
       window.addEventListener("scroll",() => {
-          console.log(window.pageYOffset);
           if(window.pageYOffset > 0){
               setScroll(true);
           }

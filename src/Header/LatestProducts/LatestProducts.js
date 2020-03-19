@@ -21,9 +21,9 @@ const Hr = styled.hr`
   background-color: blueviolet;
 `;
 const H1 = styled.h1`
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #000;
-  min-width: 45%;
+  min-width: 70%;
   text-align: center;
 `;
 const Grid = styled.div`
