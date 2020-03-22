@@ -5,6 +5,9 @@ import Card from "./Card/Card";
 const Container = styled.div`
   width: 100%;
   padding-top: 50px;
+   @media (min-width: 1200px) {
+      padding: 50px 100px;
+  }
  
 `;
 const Title = styled.div`
@@ -31,6 +34,10 @@ const Grid = styled.div`
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
+  @media (min-width: 1200px) {
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 100px;
+  }
 `;
 const LatestProducts = () => {
     return(

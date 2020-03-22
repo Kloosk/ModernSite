@@ -7,6 +7,11 @@ const Container = styled.div`
    width: 90vw;
    height: 30vh;
    background: url(${Image}) no-repeat center/cover;
+   
+    @media (min-width: 1200px) {
+      width: 600px;
+      height: 450px;
+   }
 `;
 
 const Img = () => {

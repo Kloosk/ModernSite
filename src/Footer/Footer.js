@@ -14,6 +14,9 @@ const Ul = styled.ul`
   grid-template-columns: repeat(2,1fr);
   justify-items: center;
   align-items: center;
+  @media (min-width: 1200px) {
+      grid-template-columns: repeat(5,1fr);
+  }
 `;
 const Li = styled.li`
   cursor: pointer;
@@ -24,6 +27,9 @@ const Li = styled.li`
   }
   &:nth-child(5){
     grid-column: 1/3;
+    @media (min-width: 1200px) {
+      grid-column: auto;
+  }
   }
   
 `;

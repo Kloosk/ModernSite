@@ -29,6 +29,11 @@ const CartMenu = styled.div`
     ${IconCart}:hover & {
      display: block;
   }
+  @media (min-width: 1200px) {
+     width: 40vw;
+     top: 100%;
+     right: 0;
+  }
 `;
 const Head = styled.div`
   color: #000;
@@ -61,7 +66,11 @@ const Search = styled.svg`
   color: blueviolet;
   font-size: 2rem;
   cursor: pointer;
-  margin-left: 15px;
+  margin: 0 auto;
+  @media (min-width: 1200px) {
+     font-size: 3rem;
+     margin: 0 auto;
+  }
 `;
 const SeekMenu = styled.div`
     position: absolute;
@@ -72,6 +81,11 @@ const SeekMenu = styled.div`
     display: none;
     ${IconSeek}:hover & {
      display: block;
+  }
+  @media (min-width: 1200px) {
+     width: 40vw;
+     top: 100%;
+     right: 0;
   }
 `;
 const SeekBody = styled.div`

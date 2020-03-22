@@ -54,6 +54,10 @@ const Containe = styled.div`
   background-image: url(${img});
   background-position: center;
   background-size: cover;
+   @media (min-width: 1200px) {
+     width: 50vw;
+     transform: ${props => props.open ? 'translateX(0)' : 'translateX(-50vw)'}; 
+  }
 `;
 const Exit = styled.div`
   z-index: 3;

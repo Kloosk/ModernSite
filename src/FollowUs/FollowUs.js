@@ -11,6 +11,11 @@ const Container = styled.div`
     color: #fff;
     width: 100vw;
     padding: 20px 0;
+  
+    @media (min-width: 1200px) {
+          flex-direction: row;
+          padding: 50px 0;
+      }
 `;
 const Btn = styled.button`
   outline: none;
@@ -54,6 +59,9 @@ const Btn = styled.button`
     left: 50%;
     bottom: 0;
     transform: skewX(0deg);
+  }
+  @media (min-width: 1200px) {
+      margin-left: 100px;
   }
 `;
 const Icon = styled.svg`

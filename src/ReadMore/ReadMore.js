@@ -6,11 +6,19 @@ import img2 from '../img/mobile/laptop.jpg';
 const Container = styled.div`
   width: 100vw;
   height: 130vh;
+  @media (min-width: 1200px) {
+      height: 100vh;
+      padding: 0 50px;
+  }
+
 `;
 const Img = styled.div`
   position: relative;
   height: 50%;
   width: 100%;
+  @media (min-width: 1200px) {
+      height: 100%;
+  }
 `;
 const ImgTwo = styled.div`
   position: absolute;
@@ -25,6 +33,9 @@ const ImgTwo = styled.div`
    ${Img}:hover & {
     transform: translate(-56%,20px);
     z-index: 2; 
+  }
+  @media (min-width: 1200px) {
+      height: 100%;
   }
 `;
 const ImgOne = styled.div`
@@ -41,13 +52,18 @@ const ImgOne = styled.div`
      transform: translate(-44%,-20px);
       z-index: 1;
   }
-  
+   @media (min-width: 1200px) {
+      height: 100%;
+  }
 `;
 const Text = styled.div`
   width: 95%;
   padding: 0 5vw 2vh 5vw;
   border-right: 10px solid gray;
   border-bottom: 10px solid gray;
+  @media (min-width: 1200px) {
+     align-self: flex-end;
+  }
 `;
 const H1 = styled.h1`
  font-size: 2rem;
@@ -90,6 +106,18 @@ const Flex = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  @media (min-width: 1200px) {
+      margin-bottom: 150px;
+  }
+`;
+const Grid = styled.div`
+    height: 100%;
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 50%;
+      align-items: center;
+  }
 `;
 const ReadMore = () => {
     return(
@@ -97,15 +125,17 @@ const ReadMore = () => {
             <Flex>
                 <Hr/><Hone>Read More</Hone><Hr/>
             </Flex>
-            <Img>
-                <ImgOne></ImgOne>
-                <ImgTwo></ImgTwo>
-            </Img>
-            <Text>
-                <H1>BEST FURNITURE<Span>IN THE WORLD</Span></H1>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet aut dolorem eum eveniet expedita fugit porro quas quia, ut.</P>
-                <A href="#">LEARN MORE</A>
-            </Text>
+            <Grid>
+                <Img>
+                    <ImgOne></ImgOne>
+                    <ImgTwo></ImgTwo>
+                </Img>
+                <Text>
+                    <H1>BEST FURNITURE<Span>IN THE WORLD</Span></H1>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet aut dolorem eum eveniet expedita fugit porro quas quia, ut.</P>
+                    <A href="#">LEARN MORE</A>
+                </Text>
+            </Grid>
         </Container>
     )
 };

@@ -3,11 +3,14 @@ import styled from "styled-components";
 import img1 from '../img/mobile/laptop.jpg';
 
 const Container = styled.div`
-   height: 180vh;
+    height: 180vh;
     width: 100vw;
     background-color: #fff;
     font-size: 2rem;
     position: relative;
+    @media (min-width: 1200px) {
+      height: 80vh;
+  }
 `;
 const BgH1 = styled.h1`
   position: absolute;
@@ -44,6 +47,10 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+    @media (min-width: 1200px) {
+     width: 50%;
+     left: 50%;
+  }
 `;
 const Bg = styled.div`
   width: 75%;
@@ -54,6 +61,7 @@ const Bg = styled.div`
 const Block = styled.div`
   position: absolute;
   bottom: 10%;
+  left: 0;
   width: 100%;
   height: 25%;
   background: linear-gradient(to right,blue,blueviolet);
@@ -61,6 +69,11 @@ const Block = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+   @media (min-width: 1200px) {
+     width: 200%;
+     bottom: 5%;
+     transform: translateX(-50%);
+  }
   
 `;
 const Text = styled.p`
@@ -71,6 +84,12 @@ const Text = styled.p`
   color: gray;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  @media (min-width: 1200px) {
+     width: 50%;
+     left: 0;
+     top: 30%;
+     text-align: right;
+  }
 `;
 const Hot = styled.h1`
   font-size: 1.8rem;
@@ -88,7 +107,7 @@ const Btn = styled.button`
   border: 1px solid #000;
   position: relative;
   border-radius: 14px;
-  transition: font-weight 0.3s ease-in;}
+  transition: font-weight 0.3s ease-in;
   &::after{
     content: '';
     height: 0;
@@ -110,14 +129,14 @@ const WeekOffer = () => {
       <Container>
             <BgH1>BEST OFFER</BgH1>
             <P>CHECK OUT <Span>OUR WEEKLY OFFER</Span></P>
-            <Item>
-                <Bg></Bg>
-                <Block>
-                    <Hot>HOT!</Hot>
-                    <Btn>Buy now!</Btn>
-                </Block>
-            </Item>
-            <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum, facere maiores repellat vel voluptatum?<br/><br/> Alias amet animi atque consequatur cum cupiditate delectus eaque error eum excepturi expedita facilis fuga iste magnam magni minima molestiae nam necessitatibus neque nesciunt odio omnis porro provident quae, quos repellat reprehenderit, sequi similique sint sit sunt suscipit tempore tenetur unde vel vitae voluptates. Quae!</Text>
+                <Item>
+                    <Bg></Bg>
+                    <Block>
+                        <Hot>HOT!</Hot>
+                        <Btn>Buy now!</Btn>
+                    </Block>
+                </Item>
+                <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum, facere maiores repellat vel voluptatum?<br/><br/> Alias amet animi atque consequatur cum cupiditate delectus eaque error eum excepturi expedita facilis fuga iste magnam magni minima molestiae nam necessitatibus neque nesciunt odio omnis porro provident quae, quos repellat reprehenderit, sequi similique sint sit sunt suscipit tempore tenetur unde vel vitae voluptates. Quae!</Text>
       </Container>
   )
 };

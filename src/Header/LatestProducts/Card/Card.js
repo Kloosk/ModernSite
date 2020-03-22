@@ -8,6 +8,9 @@ const Container = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
+   @media (min-width: 1200px) {
+      width: 100%;
+  }
 `;
 const Out = styled.div`
    width: 80vw;
@@ -17,6 +20,10 @@ const Out = styled.div`
   ${Container}:hover &{
       transform: rotateY(180deg);
    }
+    @media (min-width: 1200px) {
+      width: 100%;
+  }
+
 `;
 const Front = styled.div`
   width: 100%;

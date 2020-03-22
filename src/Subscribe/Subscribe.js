@@ -10,6 +10,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+   @media (min-width: 1200px) {
+      flex-direction: row;
+      padding: 50px 0;
+  }
 `;
 const Input = styled.input`
   border-radius: 27px;
@@ -25,6 +29,10 @@ const Input = styled.input`
   background: linear-gradient(to right,blue , blueviolet);
   &:focus{
     border: 2px solid #fff;
+  }
+   @media (min-width: 1200px) {
+     margin: 0 50px 0 0 ;
+    width: 700px;
   }
 `;
 const Btn = styled.button`

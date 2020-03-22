@@ -33,6 +33,9 @@ const Slide = styled.div`
     background: linear-gradient(blueviolet , blue);
     opacity: 0.8;
   }
+   @media (min-width: 1200px) {
+    flex-direction: row-reverse;
+   }
 `;
 const ArrowLeft = styled.div`
   width: 50px;

@@ -30,6 +30,10 @@ const Client = styled.div`
   margin-top: 20px;
   opacity: 0.9;
   padding: 40px;
+  @media (min-width: 1200px) {
+     width: 80%;
+  }
+
 `;
 const H1 = styled.h1`
   background-color: ${props => props.colorr ? "dodgerblue" : "#fff"};
@@ -54,13 +58,18 @@ const Flex = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  @media (min-width: 1200px) {
+     justify-content: flex-start;
+  }
 `;
 const Photo = styled.div`
   border-radius: 50%;
   background: url(${img2}) no-repeat center/cover ;
   width: 100px;
   height: 100px;
- 
+ @media (min-width: 1200px) {
+     margin-right: 50px;
+  }
 `;
 const Title = styled.h1`
   position:relative;
@@ -86,11 +95,24 @@ const Partners = styled.div`
   margin-top: 20px;
   opacity: 0.9;
   padding: 40px;
+  @media (min-width: 1200px) {
+     width: 80%;
+  }
+`;
+const Grid = styled.div`
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-items: center;
+      align-items: center;
+      grid-gap: 100px;
+  }
 `;
 const Reviews = () => {
     return(
         <Container>
             <Title>OUR REVIEWS</Title>
+            <Grid>
                 <Client>
                     <H1 colorr={true}>Clients</H1>
                     <P colorr={true}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat?</P>
@@ -115,6 +137,7 @@ const Reviews = () => {
                     </div>
                 </Flex>
             </Partners>
+            </Grid>
         </Container>
     )
 };

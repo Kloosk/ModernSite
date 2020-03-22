@@ -7,6 +7,10 @@ const Container = styled.div`
   padding: 0 5vw 5vh 5vw;
   font-size: 1.2rem;
   font-weight: normal;
+    @media (min-width: 1200px) {
+      max-width: 50%;
+      max-height: 70%;  
+   }
 `;
 const TitleSmall = styled.p`
   font-size: 1.3rem;
@@ -14,14 +18,23 @@ const TitleSmall = styled.p`
 const Title = styled.p`
   font-weight: bold;
   font-size: 1.5rem;
+  @media (min-width: 1200px) {
+  font-size: 1.7rem;
+  }
 `;
 const TitleBig = styled.p`
   margin: 10px 0;
   font-weight: bold;
   font-size: 2rem;
+  @media (min-width: 1200px) {
+  font-size: 2.2rem;
+  }
 `;
 const P = styled.p`
   font-size: 1rem;
+  @media (min-width: 1200px) {
+  font-size: 1.2rem;
+  }
 `;
 const Flex=  styled.div`
   margin: 35px 0;
@@ -40,10 +53,16 @@ const Btn = styled.button`
   &:hover{
     transform: scale(1.05);
   }
+  @media (min-width: 1200px) {
+  font-size: 1.4rem;
+  }
 `;
 const Price = styled.p`
   font-size: 1.5rem;
   margin-left: 20px;
+  @media (min-width: 1200px) {
+  font-size: 1.7rem;
+  }
 `;
 const Txt = () => {
     return(

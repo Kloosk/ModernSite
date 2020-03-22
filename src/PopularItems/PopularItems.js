@@ -14,13 +14,16 @@ const fadeIn = keyframes`
 const Container = styled.div`
   width: 100vw;
   margin-bottom: 120px;
-  padding:  0 3vw;
+  padding: 0 3vw;
 `;
 const Grid = styled.div`
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+   @media (min-width: 1200px) {
+      grid-template-columns: repeat(3,1fr);
+  }
 `;
 const Item = styled.div`
    width: 100%;
